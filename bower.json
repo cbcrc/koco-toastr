@@ -1,0 +1,29 @@
+{
+  "name": "koco-toastr",
+  "version": "0.1.0",
+  "homepage": "https://github.com/cbcrc/koco-toastr",
+  "authors": [
+    "Mark Moyes <mark.moyes@cbc.ca>"
+  ],
+  "description": "koco component for toastr ui",
+  "main": "koco-toastr-ui.js",
+  "moduleType": [
+    "amd"
+  ],
+  "keywords": [
+    "koco",
+    "knockout",
+    "toastr"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "toastr": "~2.1.1"
+  }
+}
