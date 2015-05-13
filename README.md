@@ -22,7 +22,7 @@ paths: {
 
 You will also need to import the styles into `less/styles.less`:
 
-```
+```css
 // Components
 @import "../bower_components/koco-toastr/src/koco-toastr.less";
 @import "../bower_components/toastr/toastr.less";
