@@ -1,8 +1,8 @@
 // Copyright (c) CBC/Radio-Canada. All rights reserved.
 // Licensed under the MIT license. See LICENSE file in the project root for full license information.
 
-define(['text!./toastr.html', 'toastr'],
-    function(template, toastr) {
+define(['toastr'],
+    function(toastr) {
         'use strict';
 
         var ToastrViewModel = function() {
@@ -12,12 +12,5 @@ define(['text!./toastr.html', 'toastr'],
             };
         };
 
-        return {
-            viewModel: {
-                createViewModel: function(settings, componentInfo) {
-                    return new ToastrViewModel(settings, componentInfo);
-                }
-            },
-            template: template
-        };
+        return ToastrViewModel;
     });
