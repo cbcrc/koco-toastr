@@ -1,0 +1,68 @@
+/* Copyright (c) CBC/Radio-Canada. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project root for full license information. */
+
+/* Apply bootstrap style */
+
+toastr {
+    position: fixed;
+    z-index: 999999;
+    top: 60px;
+    width: 100%;
+
+    .container {
+        position: relative;
+    }
+}
+
+#toast-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .toast {
+        border: 1px solid transparent;
+        background-image: none !important;
+        opacity: 1;
+        box-shadow: none;
+        &:hover {
+            box-shadow: none;
+        }
+        &:before {
+            position: absolute;
+            float: left;
+            left: 11px;
+            top: 50%;
+            margin-top: -15px;
+            width: 30px;
+            height: 30px;
+            font-family: FontAwesome;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+        }
+    }
+    .toast-success {
+        .alert-variant(@alert-success-bg; @alert-success-border; @alert-success-text);
+        &:before {
+            content: "\f00c";
+        }
+    }
+    .toast-info {
+        .alert-variant(@alert-info-bg; @alert-info-border; @alert-info-text);
+        &:before {
+            content: "\f05a";
+        }
+    }
+    .toast-warning {
+        .alert-variant(@alert-warning-bg; @alert-warning-border; @alert-warning-text);
+        &:before {
+            content: "\f06a";
+        }
+    }
+    .toast-error {
+        .alert-variant(@alert-danger-bg; @alert-danger-border; @alert-danger-text);
+        &:before {
+            content: "\f071";
+        }
+    }
+}
