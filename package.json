@@ -17,7 +17,13 @@
   },
   "license": "MIT",
   "dependencies": {
-    "toastr": "^2.1.1",
-    "knockout": "^3.3.0"
+    "knockout": "^3.4.0",
+    "koco": "^1.0.0",
+    "toastr": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0"
   }
 }
