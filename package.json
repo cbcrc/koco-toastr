@@ -1,6 +1,6 @@
 {
   "name": "koco-toastr",
-  "version": "1.2.0",
+  "version": "1.3.1",
   "homepage": "https://github.com/cbcrc/koco-toastr",
   "authors": [
     "Mark Moyes <mark.moyes@cbc.ca>"
@@ -17,8 +17,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "~3.3.6",
     "knockout": "^3.4.0",
-    "koco": "^1.0.0",
     "toastr": "^2.1.2"
   },
   "devDependencies": {
@@ -31,5 +31,8 @@
     "eslint-plugin-import": "^1.8.1",
     "eslint-plugin-jsx-a11y": "^1.2.2",
     "eslint-plugin-react": "^5.1.1"
+  },
+  "peerDependencies": {
+    "koco": "^1.0.0"
   }
 }
